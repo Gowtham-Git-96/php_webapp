@@ -13,10 +13,7 @@ pipeline{
     }
 
     stages{
-        stage("Checkout"){
-            sh "git branch: 'main', url: 'https://github.com/Gowtham-Git-96/php_webapp.git'"      
-            echo"Code Pulled Sucessfully"
-        }
+        
         
         stage("Image Build"){
         
@@ -35,7 +32,7 @@ pipeline{
         }
         stage("ECR Login"){
         
-            echo"ECR Login Completed"}
+            echo"ECR Login Completed"
         }
         stage("Tag and Push to ECR"){
 
