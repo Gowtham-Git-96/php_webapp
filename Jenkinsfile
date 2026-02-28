@@ -8,8 +8,8 @@ pipeline{
     }
 
     environment{
-        APP_NAME :"MyPhpApp"
-        APP_BUILD_NUMBER : ${BUILD_NUMBER} 
+        APP_NAME = "MyPhpApp"
+        APP_BUILD_NUMBER = ${BUILD_NUMBER} 
     }
 
     stages{
