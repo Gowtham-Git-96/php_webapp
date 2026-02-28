@@ -46,9 +46,9 @@ pipeline {
         }
 
         stage("Deploy to ECS") {
-            when {
-                branch "main"
-            }
+            // when {
+            //     branch "main"
+            // }
             steps {
                 echo "Image Deployed Successfully"
             }
