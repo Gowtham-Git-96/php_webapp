@@ -1,2 +1,7 @@
 # Jenkinsfile
 git_commands.txt
+virtualhost
+version.txt
+# Dockerfile
+php.ini
+prod.config.php

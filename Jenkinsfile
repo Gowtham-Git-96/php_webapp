@@ -1,6 +1,10 @@
 pipeline {
 
-    agent any
+    agent {
+        docker {
+            image 'ubuntu:22.04'
+        }
+    }
 
     options {
         timeout(time: 30, unit: 'MINUTES')
@@ -16,6 +20,7 @@ pipeline {
 
         stage("Build") {
             steps {
+                echo "Build Using Docker Agent"
                 echo "Build Completed"
             }
         }
