@@ -76,9 +76,9 @@ pipeline {
             echo "${APP_NAME} deployment failed"
         }
         always {
-            node{
+        
                 cleanWs()
-            }
+            
         }
     }
 }
