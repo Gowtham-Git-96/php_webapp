@@ -18,6 +18,14 @@ pipeline {
 
     stages {
 
+        stage("Docker Confirmation")
+        {
+            steps{
+                sh "docker --version"
+                sh "cat /etc/os-release"
+            }
+        }
+
         stage("Build") {
             steps {
                 echo "Build Using Docker Agent"
