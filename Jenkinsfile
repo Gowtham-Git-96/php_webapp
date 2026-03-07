@@ -75,10 +75,10 @@ pipeline {
         failure {
             echo "${APP_NAME} deployment failed"
         }
-        always {
+        // always {
         
-                cleanWs()
+        //         cleanWs()
             
-        }
+        // }
     }
 }
