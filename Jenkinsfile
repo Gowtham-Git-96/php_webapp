@@ -1,11 +1,6 @@
 pipeline {
 
-    agent {
-        docker {
-            
-            image 'ubuntu:22.04'
-        }
-    }
+    agent any
 
     options {
         timeout(time: 30, unit: 'MINUTES')
