@@ -25,7 +25,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Build Using Docker Agent"
-                sh"docker build -t phpApp:1.0 ."
+                sh"sudo docker build -t phpApp:1.0 ."
                 echo "Build Completed"
             }
         }
