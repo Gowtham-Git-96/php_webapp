@@ -5,8 +5,8 @@ RUN apt-get -y upgrade -q
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:ondrej/php
 RUN apt-get update
-RUN DEBIAN_FRONTEND='noninteractive' apt-get install -y 
-    apache2\
+RUN DEBIAN_FRONTEND='noninteractive' apt-get install -y \ 
+    apache2 \
     php5.6
 RUN apt-get install -y php5.6-mbstring php5.6-mcrypt php5.6-curl 
 RUN apt-get install -y php5.6-mysql
