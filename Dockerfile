@@ -15,6 +15,9 @@ RUN apt-get install -y unzip
 RUN apt-get install -y cron
 RUN systemctl enable cron
 
+# To Enable the php5.6
+RUN a2enmod php5.6
+
 WORKDIR /var/www/html
 COPY  ./index.php  /var/www/html/index.php
 
