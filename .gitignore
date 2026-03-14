@@ -2,6 +2,8 @@
 git_commands.txt
 virtualhost
 version.txt
-# Dockerfile
+Dockerfile
 php.ini
 prod.config.php
+docker-compose_1.yml
+# myDockerfile
